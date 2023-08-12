@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - To print in both lower and uppercase
  *
@@ -19,8 +18,6 @@ int main(void)
 	{
 		putchar(k);
 	}
-
-       	putchar('\n');
-
+	putchar('\n');
 	return (0);
 }
