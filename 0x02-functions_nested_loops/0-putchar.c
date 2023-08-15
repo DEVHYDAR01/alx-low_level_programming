@@ -9,11 +9,14 @@
 int main(void)
 {
 
-	_putchar('H');
-	_putchar('Y');
-	_putchar('D');
-	_putchar('A');
-	_putchar('R');
+	_putchar('-');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
