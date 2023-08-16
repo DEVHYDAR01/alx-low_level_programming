@@ -4,4 +4,5 @@
 #include <stdio.h>
 
 void positive_or_negative(int i);
-#endif /*My MAIN_H_*/
+
+#endif /*MAIN_H_*/
