@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * print_triangle - This will print a triangle
  * @size:size is the parameter
