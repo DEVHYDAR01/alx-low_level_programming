@@ -27,7 +27,7 @@ int main(void)
 		}
 
 		else
-			printf("%d ", num);
+			printf("%d ", digit);
 
 	printf("\n");
 	return (0);
