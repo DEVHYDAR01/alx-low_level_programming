@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * print_square - prints squares
- * @size: parameter
+ * print_square - This will print shape
+ * @size: This is theparameter
  * Return:returns nothing
  */
 void print_square(int size)
 {
 	int ink1, ink2;
+
 	if (size > 0)
 	{
 		for (ink1 = 0; ink1 < size; ink1++)
