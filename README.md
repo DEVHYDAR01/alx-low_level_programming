@@ -53,7 +53,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## Author
 
-* **Pericles Adjovi** <[Pericles001](https://github.com/Pericles001)>
+* **DEVHYDAR01** <[DEVHYDAR01](https://github.com/DEVHYDAR01)>
 
 ## Aknowledgements
 
