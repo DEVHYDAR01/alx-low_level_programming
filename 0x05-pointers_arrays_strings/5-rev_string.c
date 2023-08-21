@@ -20,7 +20,7 @@ void rev_string(char *s)
 		lens++;
 	}
 
-	lens = lenght - 1;
+	lenght = lens - 1;
 	for (g = 0; g < lens / 2; g++)
 	{
 		hold = s[g];
