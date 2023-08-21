@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 
-	char = hold;
+	char hold;
 
 	int g, lens, lenght;
 
@@ -21,7 +21,7 @@ void rev_string(char *s)
 	}
 
 	lens = lenght - 1;
-	for (g = 0; g < len / 2; g++)
+	for (g = 0; g < lens / 2; g++)
 	{
 		hold = s[g];
 		s[g] = s[lenght];
