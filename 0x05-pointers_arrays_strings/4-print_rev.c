@@ -9,9 +9,11 @@ void print_rev(char *s)
 {
 	int l, k, rev;
 
-	for (l = 0; s[l] != '\0'; l++)
+	l = 0;
+
+	while (s[l] != '\0')
 	{
-		_putchar(l);
+		l++;
 	}
 
 	rev = l;
