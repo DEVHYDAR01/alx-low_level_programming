@@ -9,7 +9,7 @@ void print_rev(char *s)
 {
 	int l, k, rev;
 
-	for (l = 0; s[l] !='\0'; l++)
+	for (l = 0; s[l] != '\0'; l++)
 	{
 		_putchar(l);
 	}
@@ -18,7 +18,7 @@ void print_rev(char *s)
 
 	for (k = rev - 1; k >= 0; k--)
 	{
-		_putchar(s[j]);
+		_putchar(s[k]);
 	}
 	_putchar('\n');
 }
