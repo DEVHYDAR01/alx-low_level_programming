@@ -11,22 +11,22 @@
 int main(void)
 {
 	int pass[100];
-	int i, sum, n;
+	int z, sum, m;
 
 	sum = 0;
 
 	srand(time(NULL));
 
-	for (i = 0; i < 100; i++)
+	for (z = 0; z < 100; z++)
 	{
-		pass[i] = rand() % 78;
-		sum += (pass[i] + '0');
-		putchar(pass[i] + '0');
+		pass[z] = rand() % 78;
+		sum += (pass[z] + '0');
+		putchar(pass[z] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
-			n = 2772 - sum - '0';
-			sum += n;
-			putchar(n + '0');
+			m = 2772 - sum - '0';
+			sum += m;
+			putchar(m + '0');
 			break;
 		}
 }
