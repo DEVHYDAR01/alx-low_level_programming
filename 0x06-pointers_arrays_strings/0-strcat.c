@@ -14,12 +14,10 @@ char *strcat(*char dest, *char src)
 	v = 0;
 	while (dest[c] != '\0')
 	{
-	
 		c++;
 	}
 	while (src[v] != '\0')
 	{
-	
 		dest[c] = src[v];
 		c++;
 		v++;
