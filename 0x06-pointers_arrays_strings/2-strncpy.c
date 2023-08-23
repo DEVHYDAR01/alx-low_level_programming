@@ -17,7 +17,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[nomcpy] = src[nomcpy];
 		nomcpy++;
 	}
-	while (i < n)
+	while (nomcpy < n)
 	{
 		dest[nomcpy] = '\0';
 		nomcpy++;
