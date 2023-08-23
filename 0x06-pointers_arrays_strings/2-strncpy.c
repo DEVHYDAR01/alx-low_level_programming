@@ -11,6 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int nomcpy;
 
 	nomcpy = 0;
+
 	while (src[nomcpy] != '\0' && nomcpy < n)
 	{
 		dest[nomcpy] = src[nomcpy];
