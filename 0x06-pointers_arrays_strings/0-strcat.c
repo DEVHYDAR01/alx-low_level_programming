@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - This function will concatenate two strings
+ * strcat - This function will concatenate two strings
  * @dest: This string to append to
  * @src: This string that will be appended
  *
@@ -12,6 +12,7 @@ char *strcat(*char dest, *char src)
 
 	c = 0;
 	v = 0;
+
 	while (dest[c] != '\0')
 	{
 		c++;
