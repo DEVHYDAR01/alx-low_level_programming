@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * string_topper - This function will change all members of 
+ * string_toupper - This function will change all members of
  * a string from lowercase to uppercase
  * @s: This is the string to modify
  *
