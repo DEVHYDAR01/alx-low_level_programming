@@ -4,8 +4,8 @@
  * @s1: This is the first string to compare
  * @s2: This is the second string to compare
  *
- * Return: it will return less than 0 if s1 is less than s2, 0 if they are equal,
- * morethan 0 if s1 is greater than s2
+ * Return: it will return less than 0 if s1 is less than s2,
+ * 0 if they are equal,morethan 0 if s1 is greater than s2
  */
 int _strcmp(char *s1, char *s2)
 {
