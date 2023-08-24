@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reverse_array - This function will reverse the content 
+ * reverse_array - This function will reverse the content
  * of an array of integers
  * @a: This is the parameter of the array of integers
  * @n: The is the parameters of the integers to be swapped
