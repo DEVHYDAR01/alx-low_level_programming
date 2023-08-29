@@ -1,26 +1,26 @@
-nclude "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
- *  * print_diagsums - function that prints the sum of the two diagonals
- *   *@a: first value -char
- *    *@size: second value -int
- *     */
+ * print_diagsums - This function will print the sum of the two diagonals
+ * @a: This will be the first value char
+ * @size: This will be the second value int
+*/
 void print_diagsums(int *a, int size)
 {
-		int i, j, suma_1 = 0, suma_2 = 0, k, l = 0;
+	int iter, j, cal_1 = 0, cal_2 = 0, d, l = 0;
 
-			k = size - 1;
-				for (i = 0; i < size; i++)
-						{
-									for (j = 0; j < size; j++)
-												{
-																if (i == j)
-																					suma_1 += a[l];
-																			if (j == k)
-																								suma_2 += a[l];
-																						l++;
-																								}
-											k--;
-												}
-					printf("%i, %i\n", suma_1, suma_2);
+	d = size - 1;
+	for (iter = 0; iter < size; iter++)
+	{
+		for (j = 0; j < size; j++)
+		{
+			if (iter == j)
+				cal_1 += a[l];
+			if (j == d)
+				cal_2 += a[l];
+			l++;
+		}
+		d--;
+	}
+	printf("%i, %i\n", cal_1, cal_2);
 }
