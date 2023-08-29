@@ -6,7 +6,7 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
+	int chess, j;
 
 	chess = 0;
 	j = 0;
