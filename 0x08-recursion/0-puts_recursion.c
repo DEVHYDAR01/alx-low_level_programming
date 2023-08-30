@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _puts_recursion - This function will fill memory with a kind of constant byte
+ * _puts_recursion - This function will fill memory
+ * with a kind of constant byte
  * @s: This is the first value
  *
  */
