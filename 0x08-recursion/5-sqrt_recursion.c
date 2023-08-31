@@ -2,7 +2,8 @@
 int _root_sqrt(int raiz, int cont);
 
 /**
- * _sqrt_recursion - This function will return the natural square root of a number
+ * _sqrt_recursion - This function will
+ * return the natural square root of a number
  * @n: This will be the first value
  *
  * Return: This will return the solution
