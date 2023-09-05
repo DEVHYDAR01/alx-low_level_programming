@@ -59,7 +59,7 @@ char *str_concat(char *s1, char *s2)
 	space1 = _strlen(s1);
 	space2 = _strlen(s2);
 
-	p = (char *) malloc((space1 + space2) * sizeof(char));
+	p = (char *) malloc((space1 + space2 + 1) * sizeof(char));
 	if (p == NULL)
 	{
 		return (NULL);
