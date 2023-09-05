@@ -66,6 +66,6 @@ char *str_concat(char *s1, char *s2)
 	}
 	_strncat(p, s1, space1);
 	_strncat(p, s2, space2);
-	p = p + 1 + '\0';
+	p += '\0';
 	return (p);
 }
