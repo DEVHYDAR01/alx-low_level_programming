@@ -29,5 +29,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		k++;
 	}
 
-return (p);
+return (point);
 }
