@@ -7,7 +7,7 @@
  * followed by the first n bytes of s2, and null terminated.
  * @s1: This is the string for concatenation
  * @s2: This is the string from which to transfer.
- * @n: int type.
+ * @n: int type
  * Return: pointer to new memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -34,10 +34,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (mark <= L2)
 	{
 		mark = L2;
-		point = (char *) malloc((L1 + L2 + 1) * sizeof(char));
+		point =  malloc((L1 + L2 + 1) * sizeof(char));
 	}
 	else
-		point = (char *) malloc(sizeof(char) * (L1 + n + 1));
+		point = malloc(sizeof(char) * (L1 + n + 1));
 	if (point == NULL)
 	{
 		return (NULL);
