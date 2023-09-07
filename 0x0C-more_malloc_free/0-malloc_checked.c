@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <limits.h>
 /**
  * *malloc_checked - This is a function that will  allocate memory using malloc
  * and return pointer if fails will exit 98.
@@ -17,5 +16,5 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
-	return (pointer);
+	return (point);
 }
