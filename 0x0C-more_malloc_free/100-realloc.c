@@ -45,10 +45,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (new_size > old_size)
 	{
-		l = 0;
-		while (l < old_size)
+		for (l = 0; l < old_size; l++)
 			point1[l] = aged_ptr[l];
-			l++;
 	}
 	free(ptr);
 	return (point1);
