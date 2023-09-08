@@ -28,7 +28,7 @@ int *array_range(int min, int max)
 	s = 0;
 	while (s < diff)
 	{
-		*(point + i) = min + i;
+		*(point + s) = min + s;
 		s++;
 	}
 	return (point);
