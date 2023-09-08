@@ -15,7 +15,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int incre, incre1,
 	int L1, L2;
 	char *point;
-	int mark = v;
+	int mark = n;
 
 	if (s1 == NULL)
 	{
