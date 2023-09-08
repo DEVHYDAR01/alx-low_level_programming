@@ -29,10 +29,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (L2 = 0; s2[L2] != '\0'; L2++)
 		;
-	if (mark <= L2)
+	if (mark >= L2)
 	{
 		mark = L2;
-		point =  malloc((L1 + L2 + 1) * sizeof(char));
+		point =  malloc(sizeof(char) * (L1 + L2 + 1));
 	}
 	else
 		point = malloc(sizeof(char) * (L1 + n + 1));
