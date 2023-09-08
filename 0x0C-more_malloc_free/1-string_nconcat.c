@@ -49,5 +49,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		point[incre++] = s2[incre1];
 	}
 	point[incre++] = '\0';
+
 	return (point);
 }
