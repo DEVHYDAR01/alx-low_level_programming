@@ -1,47 +1,91 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
+
 /**
-  * new_dog - This function will create a new struct of type dog
-  * @name: This will be the struct parameter name
-  * @age: This is the struct parameter age
-  * @owner: This will be the struct parameter owner
-  * Return: This will  return a pointer to the buffer of the datatype dog
-  */
+ * _strlen - This function will return the length of a string
+ * @s: This is the string to evaluate
+ *
+ * Return: the length of the string
+ */
+int _strlen(char *s)
+{
+	int f;
+
+	f = 0;
+
+	while (s[f] != '\0')
+	{
+		f++;
+	}
+
+	return (f);
+}
+
+/**
+ * *_strcpy - This function will copy the string pointed to by src
+ * including terminating null byte (\0)
+ * to the buffer pointed to by dest
+ * @dest: This is the pointer to the buffer that  we will copy the string
+ * @src: This is the string to be copied
+ *
+ * Return: This is the  pointer to dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int l1, n;
+
+	l1 = 0;
+
+	while (src[l1] != '\0')
+	{
+		l1++;
+	}
+
+	for (n = 0; n < len; n++)
+	{
+		dest[n] = src[n];
+	}
+	dest[n] = '\0';
+
+	return (dest);
+}
+
+/**
+ * new_dog - This function will create a new dog struct
+ * @name: This will be the name of the dog
+ * @age: This is the age of the dog
+ * @owner: This will be the owner of the dog
+ *
+ * Return: This is the pointer to the new dog (Success), NULL otherwise
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int 1len, 2len, k;
-	dog_t *doggy;
+	dog_t *dog;
+	int len1, len2;
 
-	1len = 2len = 0;
-	while (name[1len++])
-		;
-	while (owner[2len++])
-		;
-	doggy = malloc(sizeof(dog_t));
-	if (doggy == NULL)
+	l1 = _strlen(name);
+	l2 = _strlen(owner);
+
+	dog = malloc(sizeof(dog_t));
+	if (dog == NULL)
+		return (NULL);
+
+	dog->name = malloc(sizeof(char) * (l1 + 1));
+	if (dog->name == NULL)
 	{
+		free(dog);
 		return (NULL);
 	}
-	doggy->name = malloc(1len * sizeof(doggy->name));
-	if (doggy == NULL)
+	dog->owner = malloc(sizeof(char) * (l2 + 1));
+	if (dog->owner == NULL)
 	{
+		free(dog);
+		free(dog->name);
 		return (NULL);
 	}
-	for (k = 0; k < 1len; k++)
-	{
-		doggy->name[k] = name[k];
-	}
+	_strcpy(dog->name, name);
+	_strcpy(dog->owner, owner);
+	dog->age = age;
 
-	doggy->age = age;
-
-	doggy->owner = malloc(2len * sizeof(doggy->owner));
-	if (doggy == NULL)
-	{
-		return (NULL);
-	}
-	for (k = 0; k < 2len; k++)
-	{
-		doggy->owner[k] = owner[k];
-	}
-	return (doggy);
+	return (dog);
 }
