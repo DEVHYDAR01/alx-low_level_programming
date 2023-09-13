@@ -20,12 +20,14 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int fun;
 
-	for (fun = 0; ops[fun].op; fun++)
+	fun = 0; 
+	while (ops[fun].op)
 	{
 		if (strcmp(ops[fun].op, s) == 0)
 		{
 			return (ops[fun].f);
 		}
+		fun++;
 	}
 
 	return (NULL);
