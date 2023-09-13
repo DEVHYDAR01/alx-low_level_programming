@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int arg1, arg2, res;
-	char k;
+	char o;
 	int (*func)(int, int);
 
 	if (argc != 4)
@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	k = *argv[2];
+	o = *argv[2];
 
-	if ((k == '/' || k == '%') && arg2 == 0)
+	if ((o == '/' || o == '%') && arg2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
