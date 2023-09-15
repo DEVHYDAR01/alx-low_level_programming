@@ -11,40 +11,40 @@
   */
 void print_all(const char * const format, ...)
 {
-	unsigned int j;
+	unsigned int k;
 	va_list args;
-	char *s, *divider;
+	char *s, *separator;
 
 	va_start(args, format);
 
-	divider = "";
+	separator = "";
 
-	j = 0;
-	while (format && format[j])
+	k = 0;
+	while (format && format[k])
 	{
-		switch (format[j])
+		switch (format[k])
 		{
 			case 'c':
-				printf("%s%c", divider,  va_arg(args, int));
+				printf("%s%c", separator,  va_arg(args, int));
 				break;
 			case 'i':
-				printf("%s%d", divider, va_arg(args, int));
+				printf("%s%d", separator, va_arg(args, int));
 				break;
 			case 'f':
-				printf("%s%f", divider, va_arg(args, double));
+				printf("%s%f", separator, va_arg(args, double));
 				break;
 			case 's':
 				s = va_arg(args, char *);
 				if (s == NULL)
 					s = "(nil)";
-				printf("%s%s", divider, s);
+				printf("%s%s", separator, s);
 				break;
 			default:
-				j++;
+				k++;
 				continue;
 		}
-		divider = ", ";
-		j++;
+		separator = ", ";
+		k++;
 	}
 
 	printf("\n");
