@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(string, n);
 
-	dex = 0; 
+	dex = 0;
 	while (dex < n)
 	{
 		str = va_arg(string, char *);
