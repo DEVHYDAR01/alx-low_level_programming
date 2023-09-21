@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+read name
+
+touch $name
+
+sleep 1
+
+echo "#include "lists.h"" > $name
+
+sleep 1
