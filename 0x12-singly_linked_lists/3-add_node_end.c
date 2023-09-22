@@ -8,7 +8,8 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_node, *current_node;
+	list_t *new_node, *live_node;
+	size_t kap;
 
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
@@ -16,35 +17,25 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new_node->str = strdup(str);
 
-	new_node->len = stringlen(str);
-	new_node->next = NULL;
-	current_node = *head;
+	kap = 0;
 
-	if (current_node == NULL)
+	while (str[kap])
+		kap++;
+
+	new_node->len = kap;
+	new_node->next = NULL;
+	live_node = *head;
+
+	if (live_node == NULL)
 	{
 		*head = new_node;
 	}
 	else
 	{
-		while (current_node->next != NULL)
-			current_node = current_node->next;
-		current_node->next = new_node;
+		while (live_node->next != NULL)
+			live_node = live_node->next;
+		live_node->next = new_node;
 	}
 
 	return (*head);
-/**
- * stringlen - This function will determine the length of a string
- * @s: This will input a character string to
- * determine length of a string
- *
- * Return: integer count of length is returned.
- */
-
-int stringlen(const char *s)
-{
-	int j = 0;
-
-	for (j = 0; s[j]; j++)
-		continue;
-	return (j);
 }
