@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * first - This function will print a message of the constructor.
+ * constructor - This function will print a message of the constructor.
  * Return: This will return nothing.
  */
 void constructor(void) __attribute__((constructor))
