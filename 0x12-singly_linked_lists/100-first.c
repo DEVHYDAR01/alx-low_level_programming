@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * constructor - This function will print a message of the constructor.
- * Return: This will return nothing.
+ * Beginning - This function will be executed
+ * which is a consturct before main
+ * Return: There is no return for it.
  */
-void constructor(void) __attribute__((constructor))
+void __attribute__ ((constructor)) Beginning()
 {
 	printf("You're beat! and yet, you must allow");
 	printf(",\nI bore my house upon my back!\n");
