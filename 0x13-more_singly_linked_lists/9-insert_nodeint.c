@@ -43,7 +43,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			}
 			(*new_block).n = n;
 			(*new_block).next = mover_node->next;
-			mover_node->next = new_node;
+			mover_node->next = new_block;
 			return (new_block);
 		}
 		mover_node = mover_node->next;
