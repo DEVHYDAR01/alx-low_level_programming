@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
- * sum_listint - This function will return the sum of all data O(n) of the list.
+ * sum_listint - This function will return
+ * the sum of all data O(n) of the list.
  * @head: This will be the data type pointer to the head
  * Return: This is the sum of all nodes.
  */
