@@ -6,13 +6,14 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int rep = 0;
+	unsigned int rep = 0;
 	const listint_t	 *new_node = h;
 
-	for (newnode; new_node = new_node->next)
+	while (new_node != NULL)
 	{
 		printf("%d\n", new_node->n);
-		rep++;
+		rep = rep + 1;
+		new_node = new_node->next;
 	}
 	return (rep);
 }
