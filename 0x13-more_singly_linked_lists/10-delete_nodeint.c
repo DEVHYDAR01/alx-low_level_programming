@@ -1,37 +1,38 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - deletes the node at the index of listint.
- * @head: data type pointer the head/next node
- * @index: data type unsigned int index
- * Return: 1 if succed and -1 if fail
+ * delete_nodeint_at_index - This function will
+ * delete a node at the index of a list.
+ * @head: This is the data type pointer the head.
+ * @index: This will be the data type unsigned int index
+ * Return: return 1 if succed and -1 if fail
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int counter = 0;
-	listint_t *tmp_node = *head;
+	unsigned int adder = 0;
+	listint_t *mover_node = *head;
 	listint_t *idx_node;
 
-	if (tmp_node && (!index))
+	if (mover_node && (!index))
 	{
-		*head = tmp_node->next;
-		free(tmp_node);
+		*head = (*mover_node).next;
+		free(mover_node);
 		return (1);
 	}
-	while (tmp_node)
+	while (mover_node)
 	{
-		if (counter + 1 == index)
+		if (adder + 1 == index)
 		{
-			idx_node = tmp_node->next;
+			idx_node = (*mover_node).next;
 			if (idx_node)
 			{
-				tmp_node->next = idx_node->next;
+				mover_node->next = idx_node->next;
 				free(idx_node);
 				return (1);
 			}
 		}
-		tmp_node = tmp_node->next;
-		counter++;
+		mover_node = mover_node->next;
+		adder++;
 	}
 	return (-1);
 }
