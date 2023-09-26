@@ -2,6 +2,7 @@
 /**
  * print_listint - This function will print all the elements of linked list.
  * @h: This is our data type to the  pointer of the struct.
+ * @rep: my counter
  *
  * Return: The elements of the str rep
  */
