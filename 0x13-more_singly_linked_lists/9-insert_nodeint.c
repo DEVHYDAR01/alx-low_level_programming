@@ -1,11 +1,11 @@
 #include "lists.h"
-
 /**
- * insert_nodeint_at_index - insert a node in a given position.
- * @head: data type pointer the head/next node
- * @idx: data type unsigned int index
- * @n: data type int
- * Return: new_node
+ * insert_nodeint_at_index - This function will
+ * insert a node to a given position.
+ * @head: This is a data type pointer the head
+ * @idx: This is a datatype unsigned int index
+ * @n: This will be data type int
+ * Return: new_block.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -23,9 +23,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		new_block = malloc(sizeof(listint_t));
 
 		if (new_block == 0)
-		{
 			return (NULL);
-		}
 		(*new_block).n = n;
 		(*new_block).next = mover_node;
 		*head = new_block;
