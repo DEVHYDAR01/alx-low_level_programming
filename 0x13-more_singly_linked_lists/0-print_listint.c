@@ -9,7 +9,7 @@ size_t print_listint(const listint_t *h)
 	int rep = 0;
 	const listint_t	 *new_node = h;
 
-	while (new_node = new_node->next)
+	for (newnode; new_node = new_node->next)
 	{
 		printf("%d\n", new_node->n);
 		rep++;
