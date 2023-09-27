@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
- * print_listint_safe - This function will print a secured linked-list with a loop.
+ * print_listint_safe - This function will print a
+ * secured linked-list with a loop.
  * @head: This will be a data type double pointer the head.
  * Return: new_block will be returned
  */
