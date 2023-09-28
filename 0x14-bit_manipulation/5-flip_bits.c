@@ -14,13 +14,11 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int updated;
 	unsigned long int exclusive = n ^ m;
 
-	k = 63;
-	while (k >= 0)
+	for (k = 63; k >= 0; k--)
 	{
 		updated = exclusive >> k;
 		if (updated & 1)
 			adder++;
-		k++;
 	}
 
 	return (adder);
