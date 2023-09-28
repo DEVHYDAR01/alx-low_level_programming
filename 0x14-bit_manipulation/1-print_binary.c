@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _pow - This function is going to calculate base ^ power
+ * _power - This function is going to calculate base ^ power
  * @base: This is the base of the exponent
  * @power: This will be the power of the exponent
  *
