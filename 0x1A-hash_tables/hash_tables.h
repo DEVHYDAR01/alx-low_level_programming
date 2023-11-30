@@ -1,5 +1,11 @@
-#ifndef _hash_tables_
-#define _hash_tables_
+#ifndef HASH_TABLES_H
+#define HASH_TABLES_H
+
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+
 
 hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
